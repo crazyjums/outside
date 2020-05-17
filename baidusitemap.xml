@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://crazyjums.github.io/outside/fuli/</loc>
-    <lastmod>2020-05-17</lastmod>
-  </url>  <url>
     <loc>https://crazyjums.github.io/outside/vpn/</loc>
     <lastmod>2020-05-17</lastmod>
   </url>  <url>
-    <loc>https://crazyjums.github.io/outside/app/</loc>
+    <loc>https://crazyjums.github.io/outside/science/</loc>
     <lastmod>2020-05-17</lastmod>
   </url>  <url>
-    <loc>https://crazyjums.github.io/outside/science/</loc>
+    <loc>https://crazyjums.github.io/outside/fuli/</loc>
+    <lastmod>2020-05-17</lastmod>
+  </url>  <url>
+    <loc>https://crazyjums.github.io/outside/app/</loc>
     <lastmod>2020-05-17</lastmod>
   </url>
 </urlset>
