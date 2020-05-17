@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://crazyjums.github.io/about/index.html</loc>
+    <loc>https://crazyjums.github.io/fuli/</loc>
     
-    <lastmod>2020-02-21T04:53:51.316Z</lastmod>
+    <lastmod>2020-05-17T12:53:09.536Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://crazyjums.github.io/vpn/</loc>
+    
+    <lastmod>2020-05-17T12:52:31.146Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://crazyjums.github.io/app/</loc>
+    
+    <lastmod>2020-05-17T12:48:53.733Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://crazyjums.github.io/science/</loc>
+    
+    <lastmod>2020-05-17T12:47:35.233Z</lastmod>
     
   </url>
   
@@ -19,27 +40,6 @@
     <loc>https://crazyjums.github.io/tags/index.html</loc>
     
     <lastmod>2020-02-21T04:51:13.742Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://crazyjums.github.io/hello-world/</loc>
-    
-    <lastmod>2020-02-21T04:49:31.373Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://crazyjums.github.io/comments/index.html</loc>
-    
-    <lastmod>2020-02-21T04:41:36.344Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://crazyjums.github.io/my-love/</loc>
-    
-    <lastmod>2020-02-20T12:38:44.333Z</lastmod>
     
   </url>
   
