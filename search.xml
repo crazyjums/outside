@@ -42,20 +42,20 @@
 <p>密码：<code>Xie990522.</code></p>
 <p><strong>账号2：</strong></p>
 <p>账号：<code>h9a73e18@icloud.com</code><br>密码：<code>Tedsc.co1</code></p>
-<img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/photo_2020-05-16_22-12-29.jpg" style="zoom:50%;" />
+<img src="https://jums.club/outside/images/photo_2020-05-16_22-12-29.jpg" style="zoom:50%;" />
 
 <h4 id="1-2-苹果账号换区登录"><a href="#1-2-苹果账号换区登录" class="headerlink" title="1.2 苹果账号换区登录"></a>1.2 苹果账号换区登录</h4><p>首先进去到【设置】，然后进入你的苹果的iCloud界面，然后进入到【App store】。</p>
-<img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/ios-account-473x1024.jpg" style="zoom:50%;" />
+<img src="https://jums.club/outside/images/ios-account-473x1024.jpg" style="zoom:50%;" />
 
 <p>然后退出当前账号，登录上面提供的账号即可。</p>
-<img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/app-store-options-473x1024.jpeg" style="zoom:50%;" />
+<img src="https://jums.club/outside/images/app-store-options-473x1024.jpeg" style="zoom:50%;" />
 
 <h3 id="1-3-配置"><a href="#1-3-配置" class="headerlink" title="1.3 配置"></a>1.3 配置</h3><p>该软件可以通过<code>扫描二维码</code>、<code>链接导入</code>、<code>手动输入</code>、<code>配置文件</code>等方式进行配置代理信息。且所有的协议都支持前面讲的方法。</p>
 <p>这些配置相对简单，所以这里就不多说了，下面介绍一下该APP的分流如何设置。</p>
 <h3 id="1-4分流"><a href="#1-4分流" class="headerlink" title="1.4分流"></a>1.4分流</h3><p>什么是分流呢？很简单，我们在使用代理时，并不是就不访问国内的网站了，但是当国内的请求走代理时，那么就会很慢，因为这个请求先到海外的代理服务器，然后再由该服务器访问具体的国内网站，国内网站再将请求结果返回给海外代理服务器，然后代理服务器再把结果返回给你，这就相当于绕地球一圈了，速度（延迟很大）会很慢。</p>
 <p>那么我们肯定希望国内的请求就直接连接就好了，不走代理；国外的请求就走代理，这样当我们连接上代理服务器的时候，访问国内的请求就不会很慢了。</p>
 <p><a href="https://cdn.jsdelivr.net/gh/crazyjums/static@master/ssr-role.conf" target="_blank" rel="noopener">分流规则</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/68747470733a2f2f6832792e6769746875622e696f2f536861646f77726f636b65742d4144426c6f636b2d52756c65732f6669677572652f73725f746f703530305f62616e6c6973745f61642e706e673f31.png" alt=""></p>
+<p><img src="https://jums.club/outside/images/68747470733a2f2f6832792e6769746875622e696f2f536861646f77726f636b65742d4144426c6f636b2d52756c65732f6669677572652f73725f746f703530305f62616e6c6973745f61642e706e673f31.png" alt=""></p>
 <h2 id="2-圈-quantumult"><a href="#2-圈-quantumult" class="headerlink" title="2 圈-quantumult"></a>2 圈-quantumult</h2><p>分流策略配置文件：</p>
 <p><a href="https://cdn.jsdelivr.net/gh/crazyjums/static@master/quantumult_filter.conf" target="_blank" rel="noopener">https://cdn.jsdelivr.net/gh/crazyjums/static@master/quantumult_filter.conf</a></p>
 <p>拒绝访问的配置文件：</p>
@@ -65,35 +65,35 @@
 <h3 id="3-1-导入配置文件"><a href="#3-1-导入配置文件" class="headerlink" title="3.1 导入配置文件"></a>3.1 导入配置文件</h3><p>在进行配置之前，需要导入一些大牛的配置文件，这样我们就不需要进行繁琐的配置操作了。</p>
 <p>配置文件地址：<a href="https://cdn.jsdelivr.net/gh/crazyjums/static@master/quantumult_X.conf" target="_blank" rel="noopener">https://cdn.jsdelivr.net/gh/crazyjums/static@master/quantumult_X.conf</a></p>
 <p>选择【下载】，然后输入该链接地址即可。</p>
-<img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/photo_2020-05-16_23-04-42.jpg" style="zoom: 67%;" />
+<img src="https://jums.club/outside/images/photo_2020-05-16_23-04-42.jpg" style="zoom: 67%;" />
 
-<img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/photo_2020-05-16_23-04-48.jpg" style="zoom:67%;" />
+<img src="https://jums.club/outside/images/photo_2020-05-16_23-04-48.jpg" style="zoom:67%;" />
 
 <p>这里就只介绍一下如何添加<code>v2ray</code>协议了，其他的都类似这个。</p>
 <p>配置文件配置示例：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[server_local]</span><br><span class="line"># 以下示范都是 ip(域名):端口，</span><br><span class="line"># 比如 vmess-a.203.167.55.4:777 ，实际是 203.167.55.4:777</span><br><span class="line"># 前面的 ss-a，ws-tls这些，只是为了让你快速找到自己节点的类型</span><br><span class="line"># 实际使用时，请不要真的 傻乎乎的 写 vmess-a.203.167.55.4:777 这种。</span><br><span class="line"></span><br><span class="line">#shadowsocks以及shadowsocksR类型</span><br><span class="line">;shadowsocks&#x3D;ss-a.example.com:80, method&#x3D;chacha20, password&#x3D;pwd, obfs&#x3D;http, obfs-host&#x3D;bing.com, obfs-uri&#x3D;&#x2F;resource&#x2F;file, fast-open&#x3D;false, udp-relay&#x3D;false, server_check_url&#x3D;http:&#x2F;&#x2F;www.apple.com&#x2F;generate_204, tag&#x3D;Sample-A</span><br><span class="line">;shadowsocks&#x3D;ss-b.example.com:80, method&#x3D;chacha20, password&#x3D;pwd, obfs&#x3D;http, obfs-host&#x3D;bing.com, obfs-uri&#x3D;&#x2F;resource&#x2F;file, fast-open&#x3D;false, udp-relay&#x3D;false, tag&#x3D;Sample-B</span><br><span class="line">;shadowsocks&#x3D;ss-c.example.com:443, method&#x3D;chacha20, password&#x3D;pwd, obfs&#x3D;tls, obfs-host&#x3D;bing.com, fast-open&#x3D;false, udp-relay&#x3D;false, tag&#x3D;Sample-C</span><br><span class="line">;shadowsocks&#x3D;ssr-a.example.com:443, method&#x3D;chacha20, password&#x3D;pwd, ssr-protocol&#x3D;auth_chain_b, ssr-protocol-param&#x3D;def, obfs&#x3D;tls1.2_ticket_fastauth, obfs-host&#x3D;bing.com, tag&#x3D;Sample-D</span><br><span class="line">;shadowsocks&#x3D;ws-a.example.com:80, method&#x3D;aes-128-gcm, password&#x3D;pwd, obfs&#x3D;ws, obfs-uri&#x3D;&#x2F;ws, fast-open&#x3D;false, udp-relay&#x3D;false, tag&#x3D;Sample-E</span><br><span class="line">;shadowsocks&#x3D;ws-b.example.com:80, method&#x3D;aes-128-gcm, password&#x3D;pwd, obfs&#x3D;ws, fast-open&#x3D;false, udp-relay&#x3D;false, tag&#x3D;Sample-F</span><br><span class="line">;shadowsocks&#x3D;ws-tls-a.example.com:443, method&#x3D;aes-128-gcm, password&#x3D;pwd, obfs&#x3D;wss, obfs-uri&#x3D;&#x2F;ws, fast-open&#x3D;false, udp-relay&#x3D;false, tag&#x3D;Sample-G</span><br><span class="line"></span><br><span class="line"># vmess 类型，ws，wss(ws+tls),over-tls,tcp </span><br><span class="line">;ws 类型</span><br><span class="line">;vmess&#x3D;ws-c.example.com:80, method&#x3D;chacha20-ietf-poly1305, password&#x3D; 23ad6b10-8d1a-40f7-8ad0-e3e35cd32291, obfs-host&#x3D;ws-c.example.com, obfs&#x3D;ws, obfs-uri&#x3D;&#x2F;ws, fast-open&#x3D;false, udp-relay&#x3D;false, tag&#x3D;Sample-H</span><br><span class="line">; wss(ws+tls) 类型</span><br><span class="line">;vmess&#x3D;ws-tls-b.example.com:443, method&#x3D;chacha20-ietf-poly1305, password&#x3D; 23ad6b10-8d1a-40f7-8ad0-e3e35cd32291, obfs-host&#x3D;ws-tls-b.example.com, obfs&#x3D;wss, obfs-uri&#x3D;&#x2F;ws, tls-verification&#x3D;true,fast-open&#x3D;false, udp-relay&#x3D;false, tag&#x3D;Sample-I</span><br><span class="line">; tcp 类型</span><br><span class="line">;vmess&#x3D;vmess-a.example.com:80, method&#x3D;aes-128-gcm, password&#x3D;23ad6b10-8d1a-40f7-8ad0-e3e35cd32291, fast-open&#x3D;false, udp-relay&#x3D;false, tag&#x3D;Sample-J</span><br><span class="line">;vmess&#x3D;vmess-b.example.com:80, method&#x3D;none, password&#x3D;23ad6b10-8d1a-40f7-8ad0-e3e35cd32291, fast-open&#x3D;false, udp-relay&#x3D;false, tag&#x3D;Sample-K</span><br><span class="line">; over-tls 类型</span><br><span class="line">;vmess&#x3D;vmess-over-tls.example.com:443, method&#x3D;none, password&#x3D;23ad6b10-8d1a-40f7-8ad0-e3e35cd32291, obfs-host&#x3D;vmess-over-tls.example.com, obfs&#x3D;over-tls, tls-verification&#x3D;true, fast-open&#x3D;false, udp-relay&#x3D;false, tag&#x3D;Sample-L</span><br><span class="line"></span><br><span class="line">; http 类型</span><br><span class="line">;http&#x3D;http.example.com:80, username&#x3D;name, password&#x3D;pwd, fast-open&#x3D;false, udp-relay&#x3D;false, tag&#x3D;http</span><br><span class="line">;http&#x3D;https.example.com:443, username&#x3D;name, password&#x3D;pwd, over-tls&#x3D;true, tls-verification&#x3D;true, tls-host&#x3D;example.com, tls-verification&#x3D;true, fast-open&#x3D;false, udp-relay&#x3D;false, tag&#x3D;http-tls</span><br><span class="line"></span><br><span class="line">; trojan 类型</span><br><span class="line">;trojan&#x3D;example.com:443, password&#x3D;pwd, over-tls&#x3D;true, tls-verification&#x3D;true, fast-open&#x3D;false, udp-relay&#x3D;false, tag&#x3D;trojan-tls-01</span><br><span class="line">;trojan&#x3D;192.168.1.1:443, password&#x3D;pwd, over-tls&#x3D;true, tls-host&#x3D;example.com, tls-verification&#x3D;true, fast-open&#x3D;false, udp-relay&#x3D;false, tag&#x3D;trojan-tls-02</span><br></pre></td></tr></table></figure>
 
 <h1 id="windows科学上网程序"><a href="#windows科学上网程序" class="headerlink" title="windows科学上网程序"></a>windows科学上网程序</h1><h2 id="1-v2rayN-下载"><a href="#1-v2rayN-下载" class="headerlink" title="1 v2rayN-下载"></a>1 v2rayN-<a href="https://github.com/2dust/v2rayN/releases" target="_blank" rel="noopener">下载</a></h2><h3 id="1-1-添加节点"><a href="#1-1-添加节点" class="headerlink" title="1.1 添加节点"></a>1.1 添加节点</h3><p>添加节点比较简单，下面一张图介绍了该软件的添加方式：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/Snipaste_2020-05-16_21-38-18.png" alt=""></p>
+<p><img src="https://jums.club/outside/images/Snipaste_2020-05-16_21-38-18.png" alt=""></p>
 <ol>
 <li>添加<code>ssr</code>节点</li>
 </ol>
 <p>选择<code>服务器</code>-&gt;<code>添加shadowsocks服务器</code>：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/Snipaste_2020-05-16_21-40-57.png" alt=""></p>
+<p><img src="https://jums.club/outside/images/Snipaste_2020-05-16_21-40-57.png" alt=""></p>
 <ol start="2">
 <li>添加<code>v2ray</code>节点</li>
 </ol>
 <p>选择<code>服务器</code>-&gt;<code>添加VMess服务器</code>：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/Snipaste_2020-05-16_21-42-17.png" alt=""></p>
+<p><img src="https://jums.club/outside/images/Snipaste_2020-05-16_21-42-17.png" alt=""></p>
 <ol start="3">
 <li>添加<code>trojan</code>节点</li>
 </ol>
 <p>选择<code>服务器</code>-&gt;<code>添加socks服务器</code>：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/Snipaste_2020-05-16_21-44-41.png" alt=""></p>
+<p><img src="https://jums.club/outside/images/Snipaste_2020-05-16_21-44-41.png" alt=""></p>
 <h3 id="1-2-设置分流"><a href="#1-2-设置分流" class="headerlink" title="1.2 设置分流"></a>1.2 设置分流</h3><ol>
 <li>到 <a href="https://github.com/ToutyRater/V2Ray-SiteDAT/tree/master/geofiles" target="_blank" rel="noopener">https://github.com/ToutyRater/V2Ray-SiteDAT/tree/master/geofiles</a> 下载 h2y.dat 文件放到 V2Ray 运行文件的目录下。</li>
 </ol>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/Snipaste_2020-05-16_21-46-01.png" alt=""></p>
+<p><img src="https://jums.club/outside/images/Snipaste_2020-05-16_21-46-01.png" alt=""></p>
 <ol start="2">
 <li>按需要写路由规则，格式为 “ext:h2y.dat:tag”。ext 表示使用外部文件；h2y.dat 是具体的文件名；tag 泛指标签，有哪些标签由文件提供。步骤 1 下载的 h2y.dat 文件目前只有 <code>ad</code> 和 <code>gfw</code> 两个标签，ad 包含着常见的广告域名，gfw 包含着常见的被 gfw 屏蔽的域名。它们各自所包含的域名在<a href="https://github.com/ToutyRater/v2ray-SiteDAT/tree/master/h2y" target="_blank" rel="noopener">这里</a>可以看到。这个域名文件每星期自动更新，你也可以使用下面的文件配置(打开 <a href="https://github.com/ToutyRater/V2Ray-SiteDAT/tree/master/geofiles" target="_blank" rel="noopener">https://github.com/ToutyRater/V2Ray-SiteDAT/tree/master/geofiles</a> 看到的都是当时的最新版本)。路由配置示例如下。</li>
 </ol>
@@ -104,7 +104,7 @@
 <p><strong>需要注意的是，目前所有第三方的 V2Ray GUI 客户端都不支持加载外置的域名文件。</strong></p>
 </blockquote>
 <h2 id="2-clash-下载"><a href="#2-clash-下载" class="headerlink" title="2 clash-下载"></a>2 clash-<a href="https://github.com/yichengchen/clashX/releases" target="_blank" rel="noopener">下载</a></h2><p><a href="https://docs.cfw.lbyczf.com/" target="_blank" rel="noopener">配置介绍</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/ui-general1.png" alt=""></p>
+<p><img src="https://jums.club/outside/images/ui-general1.png" alt=""></p>
 <p>配置代理：</p>
 <p><strong>Profiles/xxxx.yaml</strong></p>
 <p>Profiles文件夹下文件均由用户导入，CFW统一生成的，一般命名为时间戳</p>
@@ -142,14 +142,14 @@
 <li>TAP Device：安装虚拟网卡驱动</li>
 </ul>
 </blockquote>
-<h2 id="3-Trojan-Qt5-下载"><a href="#3-Trojan-Qt5-下载" class="headerlink" title="3 Trojan Qt5-下载"></a>3 Trojan Qt5-<a href="https://github.com/Trojan-Qt5/Trojan-Qt5/releases/tag/v1.0.4" target="_blank" rel="noopener">下载</a></h2><h3 id="3-1-手动添加节点"><a href="#3-1-手动添加节点" class="headerlink" title="3.1 手动添加节点"></a>3.1 手动添加节点</h3><p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/%E6%89%8B%E5%8A%A8%E6%B7%BB%E5%8A%A0%E8%BF%9E%E6%8E%A5.jpg" alt=""></p>
+<h2 id="3-Trojan-Qt5-下载"><a href="#3-Trojan-Qt5-下载" class="headerlink" title="3 Trojan Qt5-下载"></a>3 Trojan Qt5-<a href="https://github.com/Trojan-Qt5/Trojan-Qt5/releases/tag/v1.0.4" target="_blank" rel="noopener">下载</a></h2><h3 id="3-1-手动添加节点"><a href="#3-1-手动添加节点" class="headerlink" title="3.1 手动添加节点"></a>3.1 手动添加节点</h3><p><img src="https://jums.club/outside/images/%E6%89%8B%E5%8A%A8%E6%B7%BB%E5%8A%A0%E8%BF%9E%E6%8E%A5.jpg" alt=""></p>
 <p>编辑信息：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/%E6%89%8B%E5%8A%A8%E6%B7%BB%E5%8A%A0%E8%BF%9E%E6%8E%A51.jpg" alt=""></p>
-<h3 id="3-2-启动PAC"><a href="#3-2-启动PAC" class="headerlink" title="3.2 启动PAC"></a>3.2 启动PAC</h3><p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/PAC%E6%A8%A1%E5%BC%8F.jpg" alt=""></p>
+<p><img src="https://jums.club/outside/images/%E6%89%8B%E5%8A%A8%E6%B7%BB%E5%8A%A0%E8%BF%9E%E6%8E%A51.jpg" alt=""></p>
+<h3 id="3-2-启动PAC"><a href="#3-2-启动PAC" class="headerlink" title="3.2 启动PAC"></a>3.2 启动PAC</h3><p><img src="https://jums.club/outside/images/PAC%E6%A8%A1%E5%BC%8F.jpg" alt=""></p>
 <p>更换<code>PAC</code>为<code>GFWlist</code>。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/GFWlist.jpg" alt=""></p>
-<h3 id="3-3-其他设置"><a href="#3-3-其他设置" class="headerlink" title="3.3 其他设置"></a>3.3 其他设置</h3><p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/autostartup.jpg" alt=""></p>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/%E7%AE%A1%E7%90%86%E8%8A%82%E7%82%B9.jpg" alt=""></p>
+<p><img src="https://jums.club/outside/images/GFWlist.jpg" alt=""></p>
+<h3 id="3-3-其他设置"><a href="#3-3-其他设置" class="headerlink" title="3.3 其他设置"></a>3.3 其他设置</h3><p><img src="https://jums.club/outside/images/autostartup.jpg" alt=""></p>
+<p><img src="https://jums.club/outside/images/%E7%AE%A1%E7%90%86%E8%8A%82%E7%82%B9.jpg" alt=""></p>
 ]]></content>
       <tags>
         <tag>科学上网</tag>
@@ -170,23 +170,23 @@
 <p>且<code>Google</code>、<code>Micrsoft</code>、<code>Amzon</code>这三大云计算服务商都会提供一年的年费试用，大家可以先试用这几个大的云计算商的服务试试看，然后再决定是否购买付费的<code>VPS</code>。</p>
 <h3 id="（1）VULTR"><a href="#（1）VULTR" class="headerlink" title="（1）VULTR"></a>（1）VULTR</h3><p><a href="https://www.vultr.com/" target="_blank" rel="noopener">VULTR官网</a></p>
 <p><strong>vultr的套餐：</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/%E6%8D%95%E8%8E%B7.PNG" alt=""></p>
+<p><img src="https://jums.club/outside/images/%E6%8D%95%E8%8E%B7.PNG" alt=""></p>
 <p>如果只是用于搭建一个科学上网的梯子的话，那么选一个初级的套餐完全够用，一个月2.5美金，折合人民币的话大概20元左右。</p>
 <h3 id="（2）Google-Cloud"><a href="#（2）Google-Cloud" class="headerlink" title="（2）Google Cloud"></a>（2）Google Cloud</h3><p><a href="https://cloud.google.com/" target="_blank" rel="noopener">Google Cloud官网</a></p>
 <p><strong>谷歌云福利：</strong>从注册谷歌云那天开始计算，有<strong>300美金</strong>的使用金额，使用年限是一年，如果仅仅是用于科学上网的话，这300美金足够自己用。如果不想花钱，可以重新申请一个谷歌账号，理论上可以无限用，知道谷歌取消这个福利为止。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/360%E6%88%AA%E5%9B%BE20200516203059339.jpg" alt=""></p>
+<p><img src="https://jums.club/outside/images/360%E6%88%AA%E5%9B%BE20200516203059339.jpg" alt=""></p>
 <h3 id="（3）Amzon-Cloud"><a href="#（3）Amzon-Cloud" class="headerlink" title="（3）Amzon Cloud"></a>（3）Amzon Cloud</h3><p><a href="https://aws.amazon.com/cn/?nc2=h_lg" target="_blank" rel="noopener">AWS官网</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/360%E6%88%AA%E5%9B%BE20200516203251983.jpg" alt=""></p>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/360%E6%88%AA%E5%9B%BE20200516204413649.jpg" alt=""></p>
+<p><img src="https://jums.club/outside/images/360%E6%88%AA%E5%9B%BE20200516203251983.jpg" alt=""></p>
+<p><img src="https://jums.club/outside/images/360%E6%88%AA%E5%9B%BE20200516204413649.jpg" alt=""></p>
 <h3 id="（4）Micrsoft-Cloud"><a href="#（4）Micrsoft-Cloud" class="headerlink" title="（4）Micrsoft Cloud"></a>（4）Micrsoft Cloud</h3><p><a href="https://azure.microsoft.com/zh-cn/" target="_blank" rel="noopener">Micrsoft Cloud官网</a></p>
 <p>免费试用权限界面：<a href="https://azure.microsoft.com/zh-cn/free/" target="_blank" rel="noopener">free to use</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/360%E6%88%AA%E5%9B%BE20200516203416625.jpg" alt=""></p>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/360%E6%88%AA%E5%9B%BE20200516203535197.jpg" alt=""></p>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/360%E6%88%AA%E5%9B%BE20200516203650802.jpg" alt=""></p>
+<p><img src="https://jums.club/outside/images/360%E6%88%AA%E5%9B%BE20200516203416625.jpg" alt=""></p>
+<p><img src="https://jums.club/outside/images/360%E6%88%AA%E5%9B%BE20200516203535197.jpg" alt=""></p>
+<p><img src="https://jums.club/outside/images/360%E6%88%AA%E5%9B%BE20200516203650802.jpg" alt=""></p>
 <h3 id="（5）搬瓦工"><a href="#（5）搬瓦工" class="headerlink" title="（5）搬瓦工"></a>（5）搬瓦工</h3><p><a href="https://bandwagonhost.com/" target="_blank" rel="noopener">搬瓦工官网</a></p>
 <p>这个可能比VULTR稍微贵一些，这个选择就看个人了。</p>
 <p><strong>搬瓦工套餐介绍：</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/360%E6%88%AA%E5%9B%BE20200516202924065.jpg" alt=""></p>
+<p><img src="https://jums.club/outside/images/360%E6%88%AA%E5%9B%BE20200516202924065.jpg" alt=""></p>
 <h3 id="（6）谷歌、亚马逊、微软比较"><a href="#（6）谷歌、亚马逊、微软比较" class="headerlink" title="（6）谷歌、亚马逊、微软比较"></a>（6）谷歌、亚马逊、微软比较</h3><table>
 <thead>
 <tr>
@@ -267,15 +267,15 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">bash &lt;(curl -s -L https://git.io/v2ray.sh)</span><br></pre></td></tr></table></figure>
 
 <p>按下<code>enter</code>键之后，会出现下面的界面：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/360%E6%88%AA%E5%9B%BE20200516205757327.jpg" alt=""></p>
+<p><img src="https://jums.club/outside/images/360%E6%88%AA%E5%9B%BE20200516205757327.jpg" alt=""></p>
 <p>然后按<code>1</code>进行安装，因为这是安装<code>v2ray</code>（这是一个相对<code>SSR</code>而言更加安全的协议，下面会介绍）的脚本，在这个脚本中会有<code>SSR</code>的安装，会提示是否安装<code>shadowsocks</code>，输入<code>y</code>即可。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/5c305224cfe05.jpg" alt=""></p>
+<p><img src="https://jums.club/outside/images/5c305224cfe05.jpg" alt=""></p>
 <p>配置<code>shadowsocks</code>如下：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/5c305224ad11c.jpg" alt=""></p>
+<p><img src="https://jums.club/outside/images/5c305224ad11c.jpg" alt=""></p>
 <p>配置完之后，会显示<code>v2ray</code>和<code>ssr</code>的配置信息：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/5c305224bbd75.jpg" alt=""></p>
+<p><img src="https://jums.club/outside/images/5c305224bbd75.jpg" alt=""></p>
 <h4 id="第三步-查看配置"><a href="#第三步-查看配置" class="headerlink" title="第三步 查看配置"></a>第三步 查看配置</h4><p>如果手抖了一下，没有来得及保存这些配置，就关掉了配置界面。没关系，重新打开虚拟机，输入<code>v2ray</code>即可查看相关的配置信息：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/5c305224c606e.jpg" alt=""></p>
+<p><img src="https://jums.club/outside/images/5c305224c606e.jpg" alt=""></p>
 <h3 id="1-4-SSR客户端下载"><a href="#1-4-SSR客户端下载" class="headerlink" title="1.4 SSR客户端下载"></a>1.4 <code>SSR</code>客户端下载</h3><p>windows：<a href="https://github.com/shadowsocksrr/shadowsocksr-csharp/releases" target="_blank" rel="noopener">https://github.com/shadowsocksrr/shadowsocksr-csharp/releases</a><br>android：<a href="https://github.com/shadowsocksrr/shadowsocksr-android/releases" target="_blank" rel="noopener">https://github.com/shadowsocksrr/shadowsocksr-android/releases</a><br>mac os：<a href="https://github.com/qinyuhang/ShadowsocksX-NG-R/releases/" target="_blank" rel="noopener">https://github.com/qinyuhang/ShadowsocksX-NG-R/releases/</a></p>
 <h2 id="2-V2RAY"><a href="#2-V2RAY" class="headerlink" title="2 V2RAY"></a>2 V2RAY</h2><h3 id="2-1-原理介绍"><a href="#2-1-原理介绍" class="headerlink" title="2.1 原理介绍"></a>2.1 原理介绍</h3><p><a href="https://toutyrater.github.io/basic/vmess.html" target="_blank" rel="noopener">参考文章</a></p>
 <h3 id="2-2-配置V2RAY"><a href="#2-2-配置V2RAY" class="headerlink" title="2.2 配置V2RAY"></a>2.2 配置V2RAY</h3><p><a href="https://github.com/233boy/v2ray/wiki/V2Ray一键安装脚本" target="_blank" rel="noopener">https://github.com/233boy/v2ray/wiki/V2Ray一键安装脚本</a></p>
@@ -288,17 +288,17 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">bash &lt;(curl -s -L https://git.io/v2ray.sh)</span><br></pre></td></tr></table></figure>
 
 <p>然后选择安装，即是输入 1 回车<br>选择传输协议，如果没有特别的需求，使用默认的 TCP 传输协议即可，直接回车<br>选择端口，如果没有特别的需求，使用默认的端口即可，直接回车<br>是否屏蔽广告，除非你真的需要，一般来说，直接回车即可</p>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/5c305224cfe05.jpg" alt=""></p>
+<p><img src="https://jums.club/outside/images/5c305224cfe05.jpg" alt=""></p>
 <p>是否配置 Shadowsocks ，如果不需要就直接回车，否则就输入 Y 回车<br>Shadowsocks 端口，密码，加密方式这些东西自己看情况配置即可，我个人当然是全部直接回车。。<br>OK，按回车继续</p>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/5c305224ad11c.jpg" alt=""></p>
+<p><img src="https://jums.club/outside/images/5c305224ad11c.jpg" alt=""></p>
 <p>安装信息，如果确保没有什么问题了，按回车继续</p>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/5c3052248ca3e.jpg" alt=""></p>
+<p><img src="https://jums.club/outside/images/5c3052248ca3e.jpg" alt=""></p>
 <p>(备注，安装信息会因你的配置而变化..不用在乎这截图)<br>(备注，由于我懒…脚本显示的一些信息可能会跟上面的截图有少许不同，但实际上都是很简单明了的)</p>
 <p>OK，大概等待一分钟左右， V2Ray 便会安装完成了。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/5c305224bbd75.jpg" alt=""></p>
+<p><img src="https://jums.club/outside/images/5c305224bbd75.jpg" alt=""></p>
 <p>如上图所示，V2Ray 配置信息，Shadowsocks 配置信息都有了<br>如果你使用过 Shadowsocks ，那么现在你可以测试一下 Shadowsocks 配置了，看看是否能正常使用。<br>如果你使用过 V2Ray 某些客户端，那么现在也可以测试一下配置了。<br>(备注，可能某些 V2Ray 客户端的选项或描述略有不同，但事实上，上面的 V2Ray 配置信息已经足够详细，由于客户端的不同，请对号入座。)</p>
 <h4 id="第三步-查看V2ray配置"><a href="#第三步-查看V2ray配置" class="headerlink" title="第三步 查看V2ray配置"></a>第三步 查看V2ray配置</h4><p>现在可以尝试一下输入 <code>v2ray</code> 回车，即可管理 V2Ray</p>
-<p><img src="https://cdn.jsdelivr.net/gh/crazyjums/outside@gh-pages/images/5c305224c606e.jpg" alt=""></p>
+<p><img src="https://jums.club/outside/images/5c305224c606e.jpg" alt=""></p>
 <h4 id="参考-v2ray快速管理命令"><a href="#参考-v2ray快速管理命令" class="headerlink" title="参考 v2ray快速管理命令"></a>参考 v2ray快速管理命令</h4><ol>
 <li><code>v2ray info</code> 查看 V2Ray 配置信息</li>
 <li><code>v2ray config</code> 修改 V2Ray 配置</li>
@@ -339,11 +339,11 @@
     <url>/outside/vpn/</url>
     <content><![CDATA[<h1 id="VPN提供商介绍"><a href="#VPN提供商介绍" class="headerlink" title="VPN提供商介绍"></a>VPN提供商介绍</h1><h2 id="1-surfShark（推荐）"><a href="#1-surfShark（推荐）" class="headerlink" title="1 surfShark（推荐）"></a>1 surfShark（<strong>推荐</strong>）</h2><p><a href="https://surfshark.com/zh/deals?coupon=sharkspecial&gclid=CjwKCAjwwYP2BRBGEiwAkoBpAtwz_o74eLACj8tJwuIh17iQaEmtXvhjk3F7VwSjkij0SRUVDyYnrhoCGpkQAvD_BwE" target="_blank" rel="noopener">surfShark官网</a></p>
 <p>可以使用支付宝支付，相对来讲比较友好。但是如果想要安全的，还是使用<code>visa</code>等双币信用卡进行支付，更加安全。</p>
-<p><img src="G:%5C%E7%94%B5%E5%AD%90%E4%B9%A6%5Cpic%5C360%E6%88%AA%E5%9B%BE20200517170413775.jpg" alt=""></p>
+<p><img src="https://jums.club/outside/images/360%E6%88%AA%E5%9B%BE20200517170413775.jpg" alt=""></p>
 <h2 id="2-NordVPN"><a href="#2-NordVPN" class="headerlink" title="2 NordVPN"></a>2 NordVPN</h2><p><a href="https://nordvpn.com/zh/special/?utm_medium=affiliate&utm_term&utm_content=greatvpn_ggEAIaIQobChMItpGG6siX6AIVT9GWCh211wccEAEYASAAEgI2TfD_BwE&utm_campaign=off51&utm_source=aff826" target="_blank" rel="noopener">NordVPN官网</a></p>
-<p><img src="G:%5C%E7%94%B5%E5%AD%90%E4%B9%A6%5Cpic%5C360%E6%88%AA%E5%9B%BE20200517170716684.jpg" alt=""></p>
+<p><img src="https://jums.club/outside/images/360%E6%88%AA%E5%9B%BE20200517170716684.jpg" alt=""></p>
 <h2 id="3-cyberGhostVpn"><a href="#3-cyberGhostVpn" class="headerlink" title="3 cyberGhostVpn"></a>3 cyberGhostVpn</h2><p><a href="https://www.cyberghostvpn.com/en_US/offer/stay-at-home?aff_id=1004&brand=vpnMentor&coupon=2Y2M&aff_sub4=2Y2M&aff_sub=greatvpn_ggEAIaIQobChMItpGG6siX6AIVT9GWCh211wccEAEYASAAEgI2TfD_BwE&aff_sub2=D202005170405_o&affiliate_google_clientid=285281239.1589706183&utm_medium=affiliate&utm_source=1004" target="_blank" rel="noopener">cyberGhostVpn官网</a></p>
-<p><img src="G:%5C%E7%94%B5%E5%AD%90%E4%B9%A6%5Cpic%5C360%E6%88%AA%E5%9B%BE20200517170659261.jpg" alt=""></p>
+<p><img src="https://jums.club/outside/images/360%E6%88%AA%E5%9B%BE20200517170659261.jpg" alt=""></p>
 <h2 id="4-ExpressVPN（不推荐）"><a href="#4-ExpressVPN（不推荐）" class="headerlink" title="4 ExpressVPN（不推荐）"></a>4 ExpressVPN（不推荐）</h2><p>虽然这是一个全球挺大的vpn服务提供商，但是好像有红色背景，大家自行考量。既然不推荐，那就不放官网了，以免误导大家。</p>
 ]]></content>
       <tags>
